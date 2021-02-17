@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang ="ja">
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" href="./milligram.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>2DiffJson</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+          <h4>Json To JS</h4>
+          <h6>javascript形式のオブジェクトに変換します。</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column columns-100 card">
+        <label for="commentField">JSON</label>
+        <textarea placeholder="JSONを貼り付けます。" class="text-area" spellcheck="false" id="JSONField" /></textarea>
+        <span id= "jsonFieldError" class="json-field-error">エラー：JSON形式ではありません</span>
+      </div>
+    </div>
+    <div class="row">
+      <div id="list" contentEditable="true" class="list column columns-50 card">
+      </div>
+    </div>
+  </div>
+  <script src="./diffJson.js"></script>
+  <script src="./index.js"></script>
+</body>
